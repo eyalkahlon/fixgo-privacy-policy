@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixGo — Support / תמיכה</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 4px;
+      font-size: 22px;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.8;
+      font-size: 14px;
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      flex-wrap: wrap;
+    }
+    .lang-switch button {
+      border: 1px solid #cbd5e1;
+      background: #fff;
+      color: #0f172a;
+      border-radius: 999px;
+      padding: 8px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 16px 48px;
+    }
+    .intro {
+      font-size: 15px;
+      color: #475569;
+      margin-bottom: 24px;
+    }
+    section.support {
+      display: none;
+    }
+    section.support.active {
+      display: block;
+    }
+    .support[dir="rtl"] {
+      text-align: right;
+    }
+    .support[dir="ltr"] {
+      text-align: left;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    article h2 {
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+    article p {
+      font-size: 14px;
+      color: #334155;
+      margin: 0;
+    }
+    .contact-email {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0f172a;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 13px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FixGo</h1>
+    <p>Support / תמיכה / Поддержка / الدعم</p>
+  </header>
+
+  <div class="lang-switch">
+    <button data-lang="he" class="active">עברית</button>
+    <button data-lang="en">English</button>
+    <button data-lang="ru">Русский</button>
+    <button data-lang="ar">العربية</button>
+  </div>
+
+  <main>
+    <!-- Hebrew -->
+    <section class="support active" dir="rtl" lang="he" data-lang="he">
+      <h2 style="font-size:20px; margin-bottom:4px;">תמיכה ב-FixGo</h2>
+      <p class="intro">משתמשים יכולים לפנות אלינו בנושאים טכניים, חשבון, שירות, פרטיות או כל בעיה באפליקציה.</p>
+
+      <article>
+        <h2>פנייה במייל</h2>
+        <p>ניתן לפנות אלינו בכתובת:</p>
+        <a class="contact-email" href="mailto:fixgofree@gmail.com">fixgofree@gmail.com</a>
+      </article>
+
+      <article>
+        <h2>פנייה מתוך האפליקציה</h2>
+        <p>קיימת גם אפשרות לשלוח פנייה ישירות מתוך האפליקציה: הגדרות ← תמיכה ← שליחת פנייה.</p>
+      </article>
+
+      <article>
+        <h2>זמן מענה</h2>
+        <p>נשתדל להשיב בהקדם האפשרי.</p>
+      </article>
+
+      <a class="back-link" href="index.html">→ מדיניות הפרטיות</a>
+    </section>
+
+    <!-- English -->
+    <section class="support" dir="ltr" lang="en" data-lang="en">
+      <h2 style="font-size:20px; margin-bottom:4px;">FixGo Support</h2>
+      <p class="intro">Users can contact us regarding technical issues, account, service, privacy, or any problem with the app.</p>
+
+      <article>
+        <h2>Contact by email</h2>
+        <p>You can reach us at:</p>
+        <a class="contact-email" href="mailto:fixgofree@gmail.com">fixgofree@gmail.com</a>
+      </article>
+
+      <article>
+        <h2>Contact from within the app</h2>
+        <p>You can also submit a request directly from the app: Settings → Support → Send a request.</p>
+      </article>
+
+      <article>
+        <h2>Response time</h2>
+        <p>We will do our best to respond as soon as possible.</p>
+      </article>
+
+      <a class="back-link" href="index.html">→ Privacy Policy</a>
+    </section>
+
+    <!-- Russian -->
+    <section class="support" dir="ltr" lang="ru" data-lang="ru">
+      <h2 style="font-size:20px; margin-bottom:4px;">Поддержка FixGo</h2>
+      <p class="intro">Пользователи могут обращаться к нам по техническим вопросам, вопросам аккаунта, обслуживания, конфиденциальности или любой другой проблеме в приложении.</p>
+
+      <article>
+        <h2>Связаться по электронной почте</h2>
+        <p>Вы можете связаться с нами по адресу:</p>
+        <a class="contact-email" href="mailto:fixgofree@gmail.com">fixgofree@gmail.com</a>
+      </article>
+
+      <article>
+        <h2>Обращение из приложения</h2>
+        <p>Вы также можете отправить обращение прямо из приложения: Настройки → Поддержка → Отправить обращение.</p>
+      </article>
+
+      <article>
+        <h2>Время ответа</h2>
+        <p>Мы постараемся ответить как можно скорее.</p>
+      </article>
+
+      <a class="back-link" href="index.html">→ Политика конфиденциальности</a>
+    </section>
+
+    <!-- Arabic -->
+    <section class="support" dir="rtl" lang="ar" data-lang="ar">
+      <h2 style="font-size:20px; margin-bottom:4px;">دعم FixGo</h2>
+      <p class="intro">يمكن للمستخدمين التواصل معنا بخصوص المسائل الفنية، الحساب، الخدمة، الخصوصية، أو أي مشكلة في التطبيق.</p>
+
+      <article>
+        <h2>التواصل عبر البريد الإلكتروني</h2>
+        <p>يمكنكم التواصل معنا على العنوان:</p>
+        <a class="contact-email" href="mailto:fixgofree@gmail.com">fixgofree@gmail.com</a>
+      </article>
+
+      <article>
+        <h2>التواصل من داخل التطبيق</h2>
+        <p>يمكن أيضًا إرسال طلب مباشرة من التطبيق: الإعدادات ← الدعم ← إرسال طلب.</p>
+      </article>
+
+      <article>
+        <h2>وقت الرد</h2>
+        <p>سنبذل قصارى جهدنا للرد في أقرب وقت ممكن.</p>
+      </article>
+
+      <a class="back-link" href="index.html">→ سياسة الخصوصية</a>
+    </section>
+  </main>
+
+  <script>
+    var buttons = document.querySelectorAll('.lang-switch button');
+    var sections = document.querySelectorAll('section.support');
+    var html = document.documentElement;
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lang = btn.getAttribute('data-lang');
+
+        buttons.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+
+        sections.forEach(function (sec) {
+          if (sec.getAttribute('data-lang') === lang) {
+            sec.classList.add('active');
+            html.setAttribute('lang', lang);
+            html.setAttribute('dir', sec.getAttribute('dir'));
+          } else {
+            sec.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
